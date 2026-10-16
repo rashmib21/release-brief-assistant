@@ -2,7 +2,7 @@
 
 A web app where a developer enters a structured release package (features, bug fixes, changed behaviour, QA summary, known limitations, migration notes, affected user groups) and gets AI-drafted release summaries for two audiences. The AI drafts; a person reviews, edits, approves or rejects every statement. The AI never approves a release and never deploys anything.
 
-- Live app: `<add the hosted URL>`
+- Live app: `https://release-brief-assistant-9qdz.onrender.com/`
 - Stack: FastAPI, SQLAlchemy, Postgres (SQLite locally), Gemini (`google-genai`), React + TypeScript + Vite
 - Try it fast: open the app and press **Load sample release**.
 
