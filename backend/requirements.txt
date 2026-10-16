@@ -1,0 +1,9 @@
+# Pinned to the versions the test suite and smoke test were run against.
+# (An unpinned sqlalchemy>=2.0 already changed the default Postgres driver once and broke startup.)
+fastapi==0.143.2
+uvicorn[standard]==0.53.0
+sqlalchemy==2.1.4
+pydantic==2.13.5
+pydantic-settings==2.16.0
+psycopg2-binary==2.9.13
+google-genai==2.31.0

@@ -1,0 +1,30 @@
+{
+  "name": "QuickBite mobile app 2.3 (sample)",
+  "package": {
+    "features": [
+      {"id": "F1", "text": "UPI autopay for recurring orders."},
+      {"id": "F2", "text": "Dark mode works on all devices."}
+    ],
+    "bug_fixes": [
+      {"id": "B1", "text": "Fixed the checkout crash that happened when a coupon was applied."}
+    ],
+    "changed_behaviour": [
+      {"id": "C1", "text": "The order cancellation window is reduced from 5 minutes to 2 minutes."}
+    ],
+    "qa_summary": [
+      {"id": "Q1", "text": "UPI autopay tested on Android 13 and 14. All 12 test cases passed.", "covers": ["F1"]},
+      {"id": "Q2", "text": "Coupon checkout regression suite passed (34 cases).", "covers": ["B1"]},
+      {"id": "Q3", "text": "Dark mode checked on Android only. iOS was not tested.", "covers": ["F2"]}
+    ],
+    "known_limitations": [
+      {"id": "L1", "text": "UPI autopay is not available on iOS."}
+    ],
+    "migration_notes": [
+      {"id": "M1", "text": "Run database migration 042 (adds the autopay_mandates table) before deploying the API."}
+    ],
+    "affected_user_groups": [
+      {"id": "U1", "text": "Customers"},
+      {"id": "U2", "text": "Customer support agents"}
+    ]
+  }
+}
